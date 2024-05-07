@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+.navbar-list {
+    display: flex;
+    @include mixins.ul-li-sty;
+    margin: 0;
+}
+
+.navbar-item {
+    margin-right: 60px;
+}
+
+.navbar-link {
+    font-size: 14px;
+    color: vars.$main-text-color;
+    font-weight: 400;
+    text-decoration-line: none;
+}
+
+.navbar-item:first-child  .navbar-link{
+    color: vars.$main-light-orange-color;
+} 
+
+.navbar-link:hover {
+    color: vars.$main-light-orange-color;
+}

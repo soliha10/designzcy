@@ -1,0 +1,142 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+
+.first-servis-title, .second-server-title {
+    font-size: 40px;
+    color: vars.$main-text-color;
+    font-weight: 900;
+    text-align: center;
+}
+
+.first-servis-list {
+    width: 1170px;
+    @include mixins.df-jcs-sty;
+    @include mixins.ul-li-sty;
+    margin: 0;
+    border: 1px solid vars.$main-border-color;
+    border-radius: 17px;
+}
+
+ .first-servis-item {
+    position: relative;
+
+    padding: 200px 105px 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-servis-item:nth-child(2) {
+    border: 1px solid vars.$main-border-color;
+}
+
+.first-item-count {
+    font-size: 36px;
+    font-weight: 900;
+    color: vars.$main-text-color;
+    margin: 0;
+    text-align: center;
+}
+
+.first-item-count::before {
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    top: 54px;
+    background-image: url("../../images/customer 1.svg");
+    background-color: #60daff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+
+.first-servis-item:first-child > .first-item-count::before{
+    background-image: url("../../images/rocket 1.svg");
+    background-color: #79e28a;
+    /* content: ""; */
+}
+
+.first-servis-item:last-child > .first-item-count::before{
+    background-image: url("../../images/feedback 1.svg");
+    background-color: #f37168;
+    /* content: ""; */
+}
+
+.first-item-count-name {
+    font-size: 24px;
+    font-weight: 400;
+    color: vars.$main-text-color;
+}
+
+.second-server {
+    position: relative;
+}
+
+.second-server-list {
+    margin: 117px 0 0;
+    @include mixins.ul-li-sty;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.second-server-item {
+    padding: 116px 47px 108px 47px;
+    margin-right: 50px;
+    border: 1px solid vars.$main-white-color;
+    border-radius: 23px;
+    box-shadow: 1px 1px 10px #e6e6e6;
+}
+
+.second-server-item:last-child {
+    margin-right: 0;
+}
+
+.second-server-item-title {
+    margin: 0 0 10px;
+    font-size: 24px;
+    font-weight: 900;
+    color: vars.$main-text-color;
+    text-align: center;
+}
+
+.second-server-item-title::before {
+    position: absolute;
+    width: 102px;
+    height: 102px;
+    top: 120px;
+    margin-left: 40px;
+    background-image: url("../../images/iconburchak.svg");
+    background-color: vars.$main-white-color;
+    padding: 20px 25px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+} 
+
+.second-server-item:first-child .second-server-item-title::before {
+    background-image: url("../../images/web-design 1.svg");
+    padding: 20px 25px;
+}
+
+
+.second-server-item:nth-child(2) .second-server-item-title::before {
+    background-image: url("../../images/web-development\ 1.svg");
+    background-color: #ff7a50;
+    padding: 20px 20px;
+    margin-left: 48px;
+} 
+.second-server-item-about {
+    font-size: 16px;
+    font-weight: 400;
+    color: #595959;
+    text-align: center;
+}
+
+
+
+

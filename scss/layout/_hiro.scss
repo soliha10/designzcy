@@ -1,0 +1,48 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+
+
+.site-hiro {
+    padding: 120px 0;
+}
+
+.hiro-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hiro-about-text {
+    width: 538px;
+}
+
+.hiro-img {
+    width: 550px;
+    height: 350px;
+    /* opacity: 0.8; */
+}
+
+.hiro-title {
+    font-family: 'Rubik';
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 85.32px;
+    color: vars.$main-text-color;
+    margin: 0;
+}
+
+.hiro-title-about {
+    margin: 40px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: vars.$main-text-color;
+}
+
+.hiro-link {
+    color: vars.$main-white-color;
+    padding: 14px 28px;
+    background-color: vars.$main-light-orange-color;
+    border: 1px solid vars.$main-light-orange-color;
+    border-radius: 5px;
+    text-decoration-line: none;
+}

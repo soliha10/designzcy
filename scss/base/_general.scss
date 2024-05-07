@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as vars;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans';
+  background-color: #fefefe;
+}
+img {
+  display: block;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.list-unstyled {
+  margin-block: 0;
+  padding-left: 0;
+  list-style: none;
+}
